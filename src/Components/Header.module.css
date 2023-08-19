@@ -35,9 +35,11 @@ padding-left: 40px;
 }
 .pastaimg img{
     width: 80%;
+    border-radius: 4px
 }
 .pastaimg{
     width: 40%;
+   ;
 }
 .Aboutcontent{
     width: 60%;
