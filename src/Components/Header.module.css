@@ -1,0 +1,50 @@
+.wrap{
+    margin: 150px;
+}
+.main{
+   display: flex;
+   margin-top: 100px;
+
+}
+.firstimg{
+ width: 60%;
+
+}
+.firstimg img{
+    width:100%;
+   
+
+}
+.content{
+width: 50%;
+margin: 80px;
+text-align: center;
+padding-left: 40px;
+
+}
+.content h3{
+    color: rgb(252, 81, 109);
+    text-shadow:2px 2px rgba(252, 81, 109,0.2) ;
+}
+.content button{
+   margin: 5px;
+}
+.About{
+    display: flex;
+    margin-top: 250px;
+}
+.pastaimg img{
+    width: 80%;
+}
+.pastaimg{
+    width: 40%;
+}
+.Aboutcontent{
+    width: 60%;
+text-align: center;
+padding-left: 20px;
+}
+.Aboutcontent h3{
+    color: rgb(252, 81, 109);
+    text-shadow:2px 2px rgba(252, 81, 109,0.2) ;
+}
