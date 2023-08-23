@@ -1,5 +1,5 @@
 import styles from "./Menue.module.css";
-import coffee from "../img/R.png"
+import coffee from "../img/belyi-fon-kofe-kruasany.jpg"
 export default function Menue(){
     return(<div className={styles.wraper} >
         <div className={styles.menue}> <img src={coffee} alt="Coffee"/></div>
