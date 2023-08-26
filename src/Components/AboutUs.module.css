@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 101px 110px;
+justify-content:center;
+}
+.aboutimg{
+    width: 622px;
+    
+}
+.aboutimg img{
+    height: 494px;
+    border-radius: 4px;
+}
+.content{
+    width: 518px;
+    height: 296px;
+    color: #323A30;
+    
+}
+.content h3{
+    font-family: Times New Roman;
+    font-weight: 700;
+    font-size: 48px;
+    display: inline;
+}
+.content p{
+    font-size: 22px;
+    line-height: 2rem;
+}
+.exp{
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 28px;
+}
+.popwrap{
+margin: 150px;
+color: #323A30;
+
+}
+.popwrap h3{
+    font-family: Times New Roman;
+    font-weight: 700;
+    font-size: 48px;
+    display: inline;
+}
+.popimg{
+   margin: 50px;
+}
+.btn{
+    width: 100%;
+}
+h4{
+    color: #323A30;
+text-align: center;
+}

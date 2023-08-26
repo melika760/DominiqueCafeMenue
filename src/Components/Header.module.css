@@ -1,52 +1,43 @@
 .wrap{
-    margin: 150px;
+    margin: 80px auto;
 }
-.main{
-   display: flex;
-   margin-top: 100px;
-
+.headerimg{
+    width: 100%;
+    background-color: black;
 }
-.firstimg{
- width: 60%;
-
-}
-.firstimg img{
-    width:100%;
-   
-
+.headerimg img{
+    width: 100%;
+    height: 836px;
+    opacity: 0.3;
 }
 .content{
-width: 50%;
-margin: 80px;
-text-align: center;
-padding-left: 40px;
-
+    position: absolute;
+    width: 683px;
+    color: white;
+    bottom: 0;
+    top: 327px;
+    left: 80px;
+    line-height: 1.5rem;
 }
 .content h3{
-    color: rgb(252, 81, 109);
-    text-shadow:2px 2px rgba(252, 81, 109,0.2) ;
+    font-family: Playball;
+    font-size: 20px;
+font-style: normal;
+font-weight: 400;
 }
-.content button{
-   margin: 5px;
+
+.content p{
+    width: 70%;
+    font-family: Roboto;
+    
 }
-.About{
+.btn{
+    margin-top: 34px;
     display: flex;
-    margin-top: 250px;
+   justify-content: flex-start;
 }
-.pastaimg img{
-    width: 80%;
-    border-radius: 4px
-}
-.pastaimg{
-    width: 40%;
-   ;
-}
-.Aboutcontent{
-    width: 60%;
-text-align: center;
-padding-left: 20px;
-}
-.Aboutcontent h3{
-    color: rgb(252, 81, 109);
-    text-shadow:2px 2px rgba(252, 81, 109,0.2) ;
+.arrow{
+    width: 20px;
+height: 20px;
+flex-shrink: 0;
 }
