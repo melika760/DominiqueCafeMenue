@@ -1,0 +1,19 @@
+.wrap{
+display: flex;
+justify-content: space-between;
+}
+.logo{
+
+}
+.wraper{
+    display:flex;
+    justify-content: flex-end;
+    
+}
+.wraper a{
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #323A30;;
+}
