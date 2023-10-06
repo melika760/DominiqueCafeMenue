@@ -10,8 +10,8 @@ import Smoothies from "../img/smoothie.png";
 import Softdrinks from "../img/Softdrink.png";
 import Hotdrinks from "../img/Hotdrinks.png";
 import { Fragment } from "react";
-import Breakfastitem from "./Items/Breakfastitem";
-import { Link } from "react-router-dom";
+import BreakfastItems from "../Components/BreakfastItems";
+
 export default function Menue(){
     const MenuLists=<div className={styles.wraper} >
     <div className={styles.col} >
@@ -52,10 +52,12 @@ export default function Menue(){
          </div>
          <div className={styles.col}>
         <img src={Breakfast} alt="Breakfast"/>
-    <Link to="#breakfast"><p>Breakfast</p> <Breakfastitem/></Link>
+        <p>Breakfast</p>
          </div>
         </div>
     return(<Fragment>
+        <h1 className={styles.header}>Foods & Drinks</h1>
         {MenuLists}
+        <BreakfastItems/>
     </Fragment>)
 }
