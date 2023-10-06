@@ -1,18 +1,16 @@
-import { Fragment } from "react";
-import Nav from "./Components/Nav";
-import Header from "./Components/Header";
-import AboutUs from "./Components/AboutUs";
-import Reserve from "./Components/Reserve";
-import Footer from "./Components/Footer";
+
+import { Route,Switch } from "react-router-dom";
+import Homepage from "./pages/Homepage";
 function App() {
   return (
-<Fragment>
-  <Nav/>
-<Header/>
-<AboutUs/>
-<Reserve/>
-<Footer/>
-</Fragment>
+
+<Switch>
+  <Route path='/'><Homepage/></Route>
+  
+</Switch>
+
+
+
   );
 }
 

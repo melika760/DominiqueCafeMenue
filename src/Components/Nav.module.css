@@ -2,9 +2,7 @@
 display: flex;
 justify-content: space-between;
 }
-.logo{
 
-}
 .wraper{
     display:flex;
     justify-content: flex-end;
