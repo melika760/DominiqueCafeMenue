@@ -1,7 +1,7 @@
 import styles from "./Menue.module.css";
 import pasta from "../img/spaguetti.png";
 import Breakfast from "../img/english-breakfast.png";
-import Starter from "../img/Starter.png";
+import Starters from "../img/Starter.png";
 import Salad from "../img/salad.png";
 import Hotdishes from "../img/Hotdishes.png";
 import Sandwwich from '../img/sandwich.png';
@@ -9,10 +9,14 @@ import Juices from "../img/juices.png";
 import Smoothies from "../img/smoothie.png";
 import Softdrinks from "../img/Softdrink.png";
 import Hotdrinks from "../img/Hotdrinks.png";
-import { Fragment } from "react";
+import { Fragment} from "react";
 import BreakfastItems from "../Components/BreakfastItems";
+import {HashLink as Link } from "react-router-hash-link";
+import StarterItem from "./StarterItem";
 
 export default function Menue(){
+ 
+
     const MenuLists=<div className={styles.wraper} >
     <div className={styles.col} >
         <img src={Hotdrinks} alt="Hotdrinks"/>
@@ -46,18 +50,21 @@ export default function Menue(){
         <img src={Salad} alt="Salad"/>
     <p>Salad</p>
          </div>
-         <div className={styles.col}>
-        <img src={Starter} alt="Starter"/>
-    <p>Starter</p>
-         </div>
-         <div className={styles.col}>
-        <img src={Breakfast} alt="Breakfast"/>
-        <p>Breakfast</p>
-         </div>
+        
+        <Link to="#Starteritem"className={styles.col}>  <div>
+        <img src={Starters} alt="Starter"/> <p>Starter</p> </div></Link>
+  
+        
+         
+      <Link to="#BreakfastItem"className={styles.col}><div >
+        <img src={Breakfast} alt="Breakfast"/>  <p>Breakfast</p></div></Link>
+       
         </div>
     return(<Fragment>
         <h1 className={styles.header}>Foods & Drinks</h1>
         {MenuLists}
         <BreakfastItems/>
+        <StarterItem/>
+        
     </Fragment>)
 }

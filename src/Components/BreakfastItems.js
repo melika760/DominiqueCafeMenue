@@ -1,6 +1,6 @@
 import Styles from "../Components/BreakfastItems.module.css";
 export default function BreakfastItems(){
-    return(   <div className={Styles.wraper}>
+    return(   <div className={Styles.wraper} id="BreakfastItem">
         <h2> BREAK FAST</h2>
         <div className={Styles.wrapItems}>
         <div className={Styles.item}>
@@ -61,7 +61,7 @@ Baked Beans, Mushroom and Toast</p>
         <div className={Styles.item}>
             <div className={Styles.prices}><h3>3 Egg Plain Omelette</h3>
             <h3>£6.95</h3></div>
-         <p className={Styles.description}>Add 2 Toppings £8.95 Add Chips on the side £9.95</p>
+         <p className={Styles.description}>Add 2 Toppings £8.95 Add Chips on the side<strong>£9.95</strong> </p>
         </div>
         <div className={Styles.item}>
             <div className={Styles.prices}><h3>Cheese on Toast</h3>
@@ -76,6 +76,13 @@ Baked Beans, Mushroom and Toast</p>
         <div className={Styles.item}>
             <div className={Styles.prices}><h3>Buck Rarebit (V)</h3>
             <h3>£8.00</h3></div>
+        </div>
+        </div>
+        <div className={Styles.wrapItems}>
+        <div className={Styles.lastitem}>
+            <div className={Styles.prices}><h3>Choice of Ingredients:</h3>
+            <h3>Each £1</h3></div>
+            <p className={Styles.description}>Ham-Mushroom-Cheese-Tomato-onion Green Pepper</p>
         </div>
         </div>
     
