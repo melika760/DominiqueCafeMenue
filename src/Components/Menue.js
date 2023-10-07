@@ -13,6 +13,9 @@ import { Fragment} from "react";
 import BreakfastItems from "../Components/BreakfastItems";
 import {HashLink as Link } from "react-router-hash-link";
 import StarterItem from "./StarterItem";
+import SaladItem from "./SaladItem";
+import PastaItem from "./PastaItem";
+import HotdishesItem from "./HotdishesItem";
 
 export default function Menue(){
  
@@ -42,29 +45,23 @@ export default function Menue(){
         <img src={Hotdishes} alt="Hotdishes"/>
     <p>Hot dishes</p>
          </div>
-    <div className={styles.col}>
-        <img src={pasta} alt="Pasta"/>
-    <p>Pasta</p>
-         </div>
-         <div className={styles.col}>
-        <img src={Salad} alt="Salad"/>
-    <p>Salad</p>
-         </div>
+         <Link to="#PastaItem"className={styles.col}><div >
+        <img src={pasta} alt="Pasta"/>  <p>Pasta</p></div></Link>
+         <Link to="#SaladItem"className={styles.col}><div >
+        <img src={Salad} alt="Salad"/>  <p>Salad</p></div></Link>
         
         <Link to="#Starteritem"className={styles.col}>  <div>
         <img src={Starters} alt="Starter"/> <p>Starter</p> </div></Link>
-  
-        
-         
       <Link to="#BreakfastItem"className={styles.col}><div >
         <img src={Breakfast} alt="Breakfast"/>  <p>Breakfast</p></div></Link>
-       
         </div>
     return(<Fragment>
         <h1 className={styles.header}>Foods & Drinks</h1>
         {MenuLists}
         <BreakfastItems/>
         <StarterItem/>
-        
+        <SaladItem/>
+        <PastaItem/>
+        <HotdishesItem/>
     </Fragment>)
 }
