@@ -18,15 +18,43 @@ export default function HotdishesItem(){
             <h3>£7.95</h3></div>
         </div>
         <div className={Class.item}>
-            <div className={Class.prices}><h3>Spaghetti Napoli (V)</h3>
+            <div className={Class.prices}><h3>Hot Jacket Potato filled with Prawn Mayo or Bolognese Sauce</h3>
             <h3>£8.95</h3></div>
         </div>
         </div>
-      
         <div className={Class.wrapItems}>
-        <div className={Class.lastitem}>
-            <div className={Class.prices}><h3>Pesto Pasta (V)</h3>
+        <div className={Class.item}>
+            <div className={Class.prices}><h3>Hot Jacket Potato filled with Ratatouille (V)</h3>
+            <h3>£8.95</h3></div>
+        </div>
+        <div className={Class.item}>
+            <div className={Class.prices}><h3>Hot Jacket Potato filled with  Crispy bacon & Cheese</h3>
             <h3>£8.95</h3></div>
         </div>
         </div>
+        <div className={Class.wrapItems}>
+        <div className={Class.item}>
+            <div className={Class.prices}><h3>Beef or Chicken Burger</h3>
+            <h3>£11.95</h3></div>
+            <p className={Class.description}>Served with Chips & Salad</p>
+        </div>
+        <div className={Class.item}>
+            <div className={Class.prices}><h3>Beef Casserole</h3>
+            <h3>£11.95</h3></div>
+            <p className={Class.description}>Served with Rice & Salad</p>
+        </div>
+        </div>
+        <div className={Class.wrapItems}>
+        <div className={Class.item}>
+            <div className={Class.prices}><h3>Grilled salmon Fillet</h3>
+            <h3>£12.95</h3></div>
+            <p className={Class.description}>Served with Chips & Salad</p>
+        </div>
+        <div className={Class.item}>
+            <div className={Class.prices}><h3>Stuffed Aubergine (V)</h3>
+            <h3>£11.95</h3></div>
+            <p className={Class.description}>Served with Rice & Salad</p>
+        </div>
+        </div>
+   
     </div>)}

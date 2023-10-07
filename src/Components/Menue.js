@@ -16,11 +16,12 @@ import StarterItem from "./StarterItem";
 import SaladItem from "./SaladItem";
 import PastaItem from "./PastaItem";
 import HotdishesItem from "./HotdishesItem";
+import SandwichItem from "./SandwichItem";
 
 export default function Menue(){
  
 
-    const MenuLists=<div className={styles.wraper} >
+    const MenuLists=<div className={styles.wraper} id="#menumain" >
     <div className={styles.col} >
         <img src={Hotdrinks} alt="Hotdrinks"/>
     <p>Hotdrinks</p>
@@ -37,31 +38,29 @@ export default function Menue(){
         <img src={Juices} alt="Juices"/>
     <p>Juices</p>
          </div>
-    <div className={styles.col}>
-        <img src={Sandwwich} alt="Sandwiches"/>
-    <p>Sandwiches</p>
-         </div>
-    <div className={styles.col}>
-        <img src={Hotdishes} alt="Hotdishes"/>
-    <p>Hot dishes</p>
-         </div>
-         <Link to="#PastaItem"className={styles.col}><div >
+         <Link to="#SandwichesItem"className={styles.col} smooth><div >
+        <img src={Sandwwich} alt="Sandwiches"/>  <p>Sandwiches</p></div></Link>
+         <Link to="#HotdishesItem"className={styles.col} smooth><div >
+        <img src={Hotdishes} alt="Hotdishes"/>  <p>Hot dishes</p></div></Link>
+         <Link to="#PastaItem"className={styles.col} smooth><div >
         <img src={pasta} alt="Pasta"/>  <p>Pasta</p></div></Link>
-         <Link to="#SaladItem"className={styles.col}><div >
+         <Link to="#SaladItem"className={styles.col} smooth><div >
         <img src={Salad} alt="Salad"/>  <p>Salad</p></div></Link>
         
-        <Link to="#Starteritem"className={styles.col}>  <div>
+        <Link to="#Starteritem"className={styles.col} smooth>  <div>
         <img src={Starters} alt="Starter"/> <p>Starter</p> </div></Link>
-      <Link to="#BreakfastItem"className={styles.col}><div >
+      <Link to="#BreakfastItem"className={styles.col} smooth><div >
         <img src={Breakfast} alt="Breakfast"/>  <p>Breakfast</p></div></Link>
         </div>
     return(<Fragment>
         <h1 className={styles.header}>Foods & Drinks</h1>
         {MenuLists}
+        
         <BreakfastItems/>
         <StarterItem/>
         <SaladItem/>
         <PastaItem/>
         <HotdishesItem/>
+        <SandwichItem/>
     </Fragment>)
 }
