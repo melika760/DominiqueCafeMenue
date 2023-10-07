@@ -17,27 +17,25 @@ import SaladItem from "./SaladItem";
 import PastaItem from "./PastaItem";
 import HotdishesItem from "./HotdishesItem";
 import SandwichItem from "./SandwichItem";
+import JuiceItem from "./JuiceItem";
+import SmoothieItem from "./SmoothieItem";
+import SoftdrinksItem from "./SoftdrinksItem";
 
 export default function Menue(){
  
 
-    const MenuLists=<div className={styles.wraper} id="#menumain" >
+    const MenuLists=<div className={styles.wraper}>
     <div className={styles.col} >
         <img src={Hotdrinks} alt="Hotdrinks"/>
     <p>Hotdrinks</p>
          </div>
-    <div className={styles.col}>
-        <img src={Softdrinks} alt="Sofdrinks"/>
-    <p>Softdrinks</p>
-         </div>
-     <div className={styles.col}>
-        <img src={Smoothies} alt="Smoothies"/>
-    <p>Smoothies</p>
-         </div>
-     <div className={styles.col}>
-        <img src={Juices} alt="Juices"/>
-    <p>Juices</p>
-         </div>
+         <Link to="#SoftdrinksItem"className={styles.col} smooth><div >
+        <img src={Softdrinks} alt="Softdrinks"/>  <p>Soft drinks</p></div></Link>
+         <Link to="#SmoothiesItem"className={styles.col} smooth><div >
+        <img src={Smoothies} alt="Smoothies"/>  <p>Smoothies</p></div></Link>
+    
+         <Link to="#JuicesItem"className={styles.col} smooth><div >
+        <img src={Juices} alt="Juices"/>  <p>Juices</p></div></Link>
          <Link to="#SandwichesItem"className={styles.col} smooth><div >
         <img src={Sandwwich} alt="Sandwiches"/>  <p>Sandwiches</p></div></Link>
          <Link to="#HotdishesItem"className={styles.col} smooth><div >
@@ -62,5 +60,8 @@ export default function Menue(){
         <PastaItem/>
         <HotdishesItem/>
         <SandwichItem/>
+        <JuiceItem/>
+        <SmoothieItem/>
+        <SoftdrinksItem/>
     </Fragment>)
 }
