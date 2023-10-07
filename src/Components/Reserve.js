@@ -4,9 +4,9 @@ export default function Reserve(){
     return(<div className={styles.wraper}>
         <h3>Book a Table</h3>
         <form className={styles.form}>
-        <input type="date"/>
-        <input type="time"/>
-        <input type="number" min={0}/>
+        <input type="date" placeholder="Date"/>
+        <input type="time"  placeholder="Date"/>
+        <input type="number" min={0}  placeholder="Number"/>
         <Button className={styles.btn}>Book</Button>
     </form></div>)
 }

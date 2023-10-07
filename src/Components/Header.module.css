@@ -1,4 +1,6 @@
-
+.link a.link:hover{
+    text-decoration: none;
+}
 .headerimg{
     width: 100%;
     background-color: black;
@@ -15,11 +17,13 @@
     bottom: 0;
     top: 327px;
     left: 80px;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 .content h3{
-    font-family: Playball;
-    font-size: 20px;
+    font-family: 'Playball', cursive;
+    font-size: 40px;
 font-style: normal;
 font-weight: 400;
 }

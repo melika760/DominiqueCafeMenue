@@ -4,23 +4,38 @@ a{
 a.col:hover{
     text-decoration: none;
 }
+.btn{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+   border: none;
+    background-color: #F0E0D9;
+    cursor: pointer;
+    color: rgb(244, 174, 108);;
+}
 .wraper{
     display: flex;
     justify-content:flex-start;
+    padding: 20px;
+    position: sticky;
     
 }
 .header{
     text-align: center;
+    margin-top: 140px;
+    font-family: 'Playball', cursive;
   
 }
 a.col:active,a.col:hover,a.col::selection{
     padding: 55px;
-    height: 70px;
+    height: 75px;
        text-align: center;
        background-color: rgba(244, 189, 137, 0.8);
        border-radius: 10px;
 margin: 0 auto;
        cursor: pointer;
+      
 }
 .active img{
     width: 50px;
@@ -31,12 +46,15 @@ margin: 0 auto;
 }
 .col{
  padding: 35px;
- height: 70px;
+ height: 75px;
     text-align: center;
     background-color: rgb(194, 187, 187,0.8);
     border-radius: 10px;
     margin: 10.5px;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
 }
 .col img{
     width: 50px;

@@ -1,10 +1,12 @@
 .wraper{
-    margin-top: 100px;
+    margin-top: 350px;
 }
 .wraper h2{
     text-align: center;
     text-decoration: underline;
-   
+    font-family: 'Playball', cursive;
+   font-weight: bold;
+   font-size: 36px;
 }
 .extra{
     text-align: center;
@@ -20,6 +22,11 @@ display: flex;
     margin: 20px;
     padding: 30px;
 width: 43%;
+
+}
+.lastitem h3{
+    font-family: 'Playball', cursive;
+font-size: 20px;
 }
 
 .item{
@@ -29,8 +36,17 @@ width: 43%;
     margin: 20px;
     padding: 30px;
 width: 50%;
+
+}
+.item h3{
+    font-family: 'Playball', cursive;
+font-size: 20px;
 }
 .prices{
     display: flex;
     justify-content: space-between;
+}
+.description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }

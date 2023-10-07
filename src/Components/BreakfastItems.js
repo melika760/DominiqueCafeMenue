@@ -61,7 +61,7 @@ Baked Beans, Mushroom and Toast</p>
         <div className={Styles.item}>
             <div className={Styles.prices}><h3>3 Egg Plain Omelette</h3>
             <h3>£6.95</h3></div>
-         <p className={Styles.description}>Add 2 Toppings £8.95 Add Chips on the side<strong>£9.95</strong> </p>
+         <p className={Styles.description}>Add 2 Toppings £8.95 Add Chips on the side <strong>£9.95</strong> </p>
         </div>
         <div className={Styles.item}>
             <div className={Styles.prices}><h3>Cheese on Toast</h3>

@@ -20,31 +20,34 @@ import SandwichItem from "./SandwichItem";
 import JuiceItem from "./JuiceItem";
 import SmoothieItem from "./SmoothieItem";
 import SoftdrinksItem from "./SoftdrinksItem";
+import HotdrinksItem from "./HotdrinksItem";
+import Arrow from "../img/up-arrow(1).png"
 
 export default function Menue(){
- 
-
+    function Gotop(){
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
     const MenuLists=<div className={styles.wraper}>
-    <div className={styles.col} >
-        <img src={Hotdrinks} alt="Hotdrinks"/>
-    <p>Hotdrinks</p>
-         </div>
+   <Link to="#HotdrinksItem"className={styles.col} smooth><div >
+        <img src={Hotdrinks} alt="Hotdrinks"/>  <p>Hot Drinks</p></div></Link>
          <Link to="#SoftdrinksItem"className={styles.col} smooth><div >
-        <img src={Softdrinks} alt="Softdrinks"/>  <p>Soft drinks</p></div></Link>
+        <img src={Softdrinks} alt="Softdrinks"/>  <p>Soft Drinks</p></div></Link>
          <Link to="#SmoothiesItem"className={styles.col} smooth><div >
         <img src={Smoothies} alt="Smoothies"/>  <p>Smoothies</p></div></Link>
-    
          <Link to="#JuicesItem"className={styles.col} smooth><div >
         <img src={Juices} alt="Juices"/>  <p>Juices</p></div></Link>
          <Link to="#SandwichesItem"className={styles.col} smooth><div >
         <img src={Sandwwich} alt="Sandwiches"/>  <p>Sandwiches</p></div></Link>
          <Link to="#HotdishesItem"className={styles.col} smooth><div >
-        <img src={Hotdishes} alt="Hotdishes"/>  <p>Hot dishes</p></div></Link>
+        <img src={Hotdishes} alt="Hotdishes"/>  <p>Hot Dishes</p></div></Link>
          <Link to="#PastaItem"className={styles.col} smooth><div >
         <img src={pasta} alt="Pasta"/>  <p>Pasta</p></div></Link>
          <Link to="#SaladItem"className={styles.col} smooth><div >
         <img src={Salad} alt="Salad"/>  <p>Salad</p></div></Link>
-        
         <Link to="#Starteritem"className={styles.col} smooth>  <div>
         <img src={Starters} alt="Starter"/> <p>Starter</p> </div></Link>
       <Link to="#BreakfastItem"className={styles.col} smooth><div >
@@ -53,15 +56,25 @@ export default function Menue(){
     return(<Fragment>
         <h1 className={styles.header}>Foods & Drinks</h1>
         {MenuLists}
-        
-        <BreakfastItems/>
+       <BreakfastItems/>
+       <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <StarterItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <SaladItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <PastaItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <HotdishesItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <SandwichItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <JuiceItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <SmoothieItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
         <SoftdrinksItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <HotdrinksItem/>
+        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
     </Fragment>)
 }
