@@ -26,3 +26,19 @@ cursor: pointer;
     padding: 16px 16px;
     
 }
+@media (max-width:968px){
+   .wraper{
+    margin: 0 auto;
+   }
+   .form{
+    margin: 0 auto;
+   }
+   .form input{
+    width: 50%;
+   }
+   .btn{
+    width: 50%;
+    margin-bottom: 50px;
+    margin: 20px;
+   }
+}
