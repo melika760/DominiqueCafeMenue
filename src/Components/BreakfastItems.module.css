@@ -50,13 +50,27 @@ font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-@media(max-width:968px){
+@media(max-width:1024px){
     .wrapItems{
-        display: inline-block;
+        display:block;
+        padding-right: 0px;
+        padding-left: 0px;
+       
     }
     .item , .lastitem{
-        width: 100%;
-        margin: 10px;
-    padding: 10px;
+        width: 95%;
+        height: 100%;
+    padding: 5px;
+    margin-left: 5px;
+    }
+    .item h3{
+        font-size: 16px;
+    }
+    .description{
+        font-size: 14px;
+        text-align: left;
+    }
+    .extra{
+        font-size: 14px;
     }
 }

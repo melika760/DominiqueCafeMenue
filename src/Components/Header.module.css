@@ -1,4 +1,4 @@
-.link a.link:hover{
+.link ,a.link:hover{
     text-decoration: none;
 }
 .headerimg{

@@ -28,21 +28,18 @@ cursor: pointer;
     color: white;
     background-color: #323A30;
     width: 200px;
-    padding: 16px 16px;
+    padding: 18px 16px;
     
 }
 @media (max-width:968px){
    .wraper{
     margin: 0 auto;
+    text-align: center;
    }
-   .form{
-    margin: 0 auto;
-   }
-   .form input{
-    width: 50%;
-   }
+ 
+   
    .btn{
-    width: 50%;
+    width: 230px;
     margin-bottom: 50px;
     margin: 20px;
    }
