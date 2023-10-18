@@ -18,7 +18,7 @@ a.col:hover{
     display: flex;
     justify-content:flex-start;
     padding: 20px;
-    position: sticky;
+    
     
 }
 .header{
@@ -62,4 +62,22 @@ margin: 0 auto;
 }
 .col p{
     color:white
+}
+@media(max-width:968px){
+.wraper{
+   display: inline-block;
+   padding: 0px;
+   margin: 0 auto;
+   align-items: center;
+}
+.col{
+    padding: 20px;
+    margin: 20px auto;
+    align-items: center;
+    height: 70px;
+    display: block;
+   
+  
+}
+
 }

@@ -8,14 +8,19 @@
     font-size: 48px;
     color: #323A30;
 }
-.form{
-    margin: 70px;
+.num{
+    padding: 18px 16px;
+    border-radius: 4px;
+border: 1px solid  #323A30;
+margin: 10px;
+width: 200px;
+cursor: pointer;
 }
-.form input{
+.form .set{
     padding: 16px 16px;
     border-radius: 4px;
 border: 1px solid  #323A30;
-margin: 20px;
+margin: 10px;
 width: 200px;
 cursor: pointer;
 }
