@@ -4,7 +4,7 @@ export default function SandwichItem(){
     <h2>Sandwiches</h2>
     <div className={Class.wrapItems}>
         <div className={Class.item}>
-            <h3>Club Sandwich::</h3>
+            <h3>Club Sandwich:</h3>
             <p>Served with White or Brown Bread & Garnish Salad.To add chips extra <strong>£1</strong></p>
             <div className={Class.prices}><h3>Bacon Chicken & Avocado</h3>
             <h3>£11.50</h3></div>
