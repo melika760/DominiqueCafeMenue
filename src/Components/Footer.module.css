@@ -5,6 +5,10 @@
     justify-content: space-around;
     padding: 50px;
 }
+.map{
+    display: flex;
+    background-color: black;
+}
 @media (max-width:968px){
     .wraper{
         padding: 10px;
@@ -16,11 +20,11 @@
        
     }
     .description p{
-        font-size: 14px;
+        font-size: 12px;
     
     }
     .description h3{
-        font-size: 20px;
+        font-size: 16px;
     
     }
 }

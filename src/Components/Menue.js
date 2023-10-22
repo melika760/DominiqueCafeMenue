@@ -20,7 +20,8 @@ import JuiceItem from "./JuiceItem";
 import SmoothieItem from "./SmoothieItem";
 import SoftdrinksItem from "./SoftdrinksItem";
 import HotdrinksItem from "./HotdrinksItem";
-import Arrow from "../img/up-arrow(1).png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import{faArrowUp} from "@fortawesome/free-solid-svg-icons"
 
 export default function Menue(){
     function Gotop(){
@@ -64,24 +65,24 @@ export default function Menue(){
         <h1 className={styles.header}>Foods & Drinks</h1>
         {MenuLists}
        <BreakfastItems/>
-       <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+       <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <StarterItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <SaladItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <PastaItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <HotdishesItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <SandwichItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <JuiceItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <SmoothieItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <SoftdrinksItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
         <HotdrinksItem/>
-        <button onClick={Gotop} className={styles.btn}><img src={Arrow} alt="UP"/><p>Go Top</p></button>
+        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
     </div>)
 }
