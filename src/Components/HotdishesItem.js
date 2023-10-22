@@ -46,7 +46,7 @@ export default function HotdishesItem(){
         </div>
         <div className={Class.wrapItems}>
         <div className={Class.item}>
-            <div className={Class.prices}><h3>Grilled salmon Fillet</h3>
+            <div className={Class.prices} id="Salmon"><h3>Grilled salmon Fillet</h3>
             <h3>£12.95</h3></div>
             <p className={Class.description}>Served with Chips & Salad</p>
         </div>

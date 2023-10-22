@@ -18,7 +18,7 @@ export default function SaladItem(){
       
         <div className={Class.wrapItems}>
         <div className={Class.lastitem}>
-            <div className={Class.prices}><h3>Greek Salad</h3>
+            <div className={Class.prices} id="Greek"><h3>Greek Salad</h3>
             <h3>£9.95</h3></div>
          <p className={Class.description}>Mixed Lettuce, Feta Cheese, Olives Red Onions Cucumber & Tomato</p>
         </div>

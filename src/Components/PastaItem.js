@@ -20,7 +20,7 @@ export default function PastaItem(){
             <h3>£10.95</h3></div>
         </div>
         <div className={Class.item}>
-            <div className={Class.prices}><h3>Spaghetti Napoli (V)</h3>
+            <div className={Class.prices} id="spaghetti"><h3>Spaghetti Napoli (V)</h3>
             <h3>£8.95</h3></div>
         </div>
         </div>

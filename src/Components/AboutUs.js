@@ -4,7 +4,8 @@ import Button from "../UI/Button";
 import Breakfast from "../img/angelo-pantazis-1uIy-v4OlIk-unsplash.jpg";
 import Salmon from "../img/Frame 12.jpg";
 import Pasta from "../img/Frame 13.jpg";
-import Greek from "../img/Frame 14.jpg"
+import Greek from "../img/Frame 14.jpg";
+import { HashLink as Link } from "react-router-hash-link";
 export default function AboutUs(){
     return(<Fragment>
         <div className={styles.container}>
@@ -23,21 +24,22 @@ export default function AboutUs(){
                 <img src={Salmon} alt="Salmon Fillet"/>
                 <div className={styles.description}>
                     <h4>Grilled Salmon Fillet</h4>
-                    <Button type="Button" className={styles.btn}>See Details</Button>
+                    <Link to="/Menu#Salmon"smooth> <Button type="Button" className={styles.btn}>See Details</Button></Link>
+                   
                 </div>
             </div>
             <div className={styles.popimg}>
                 <img src={Pasta} alt="Pasta"/>
                 <div className={styles.description}>
                     <h4>Spaghetti Napoli</h4>
-                    <Button type="Button" className={styles.btn}>See Details</Button>
+                    <Link to="/Menu#spaghetti" smooth> <Button type="Button" className={styles.btn}>See Details</Button></Link>
                 </div>
             </div>
             <div className={styles.popimg}>
                 <img src={Greek} alt="Greek Salad"/>
                 <div className={styles.description}>
-                    <h4>Greek Salad</h4>
-                    <Button type="Button" className={styles.btn}>See Details</Button>
+                    <h4>Greek Salad</h4> 
+                       <Link to="/Menu#Greek" smooth> <Button type="Button" className={styles.btn}>See Details</Button></Link>
                 </div>
             </div>
            
