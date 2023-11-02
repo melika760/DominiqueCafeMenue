@@ -24,7 +24,7 @@ export default function AboutUs(){
                 <img src={Salmon} alt="Salmon Fillet"/>
                 <div className={styles.description}>
                     <h4>Grilled Salmon Fillet</h4>
-                    <Link to="/Menu#Salmon"smooth> <Button type="Button" className={styles.btn}>See Details</Button></Link>
+                    <Link to="/Menu#Salmon"smooth > <Button type="Button" className={styles.btn}>See Details</Button></Link>
                    
                 </div>
             </div>

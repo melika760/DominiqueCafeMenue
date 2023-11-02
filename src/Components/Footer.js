@@ -10,7 +10,7 @@ import {faClock} from "@fortawesome/free-solid-svg-icons";
 
 import { Fragment } from "react";
 export default function Footer(){
-    const position =[51.554698376223385, -0.16606074917867988]
+    const position =[51.554595679368795, -0.16597705865409015]
     return( <Fragment> 
         
         <div className={styles.wraper} >
