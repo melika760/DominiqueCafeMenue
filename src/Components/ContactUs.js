@@ -41,7 +41,7 @@ export default function ContactUs(){
           marginBottom:"60px"
         }}
         center={[51.554698376223385, -0.16606074917867988]}
-        zoom={8}
+        zoom={80}
       >
     <Marker position={position}><Popup>Dominique's Cafe</Popup></Marker>
         <TileLayer
