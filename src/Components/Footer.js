@@ -10,7 +10,6 @@ import {faClock} from "@fortawesome/free-solid-svg-icons";
 
 import { Fragment } from "react";
 export default function Footer(){
-    const position =[51.554595679368795, -0.16597705865409015]
     return( <Fragment> 
         
         <div className={styles.wraper} >
@@ -31,23 +30,7 @@ export default function Footer(){
         </div>
         <div>
         <div style={{ display: "flex",backgroundColor:"black" }}>
-      <MapContainer
-        style={{
-          height: "50vh",
-          width: "50%",
-          margin:"0px auto",
-          borderRadius:"40px",
-          marginBottom:"60px"
-        }}
-        center={[51.554595679368795, -0.16597705865409015]}
-        zoom={800}
-      >
-    <Marker position={position}><Popup>Dominique's Cafe</Popup></Marker>
-        <TileLayer
-          attribution="Google Maps"
-          url="https://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}"
-        />
-      </MapContainer>
+
     </div>
         </div>
                 </Fragment>)}
