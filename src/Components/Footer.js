@@ -1,8 +1,4 @@
 import styles from "./Footer.module.css"
-import 'leaflet/dist/leaflet.css';
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet-defaulticon-compatibility';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import {faPhone} from "@fortawesome/free-solid-svg-icons";
