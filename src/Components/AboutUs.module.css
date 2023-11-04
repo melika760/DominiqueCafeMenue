@@ -68,10 +68,13 @@ text-align: center;
 }
  .aboutimg{
     width: 100%;
+    right: 0px;
+   
  }
  .aboutimg img{
     width: 100%;
     right: 0px;
+
  }
  .exp{
     font-size: 28px;
@@ -80,14 +83,14 @@ text-align: center;
     width: 100%;
     display: block;
     height: 100%;
-    padding: 5px;
-    margin-left: 10px;
+    margin-left: 0px;
  }
  .content h3{
     font-size: 28px;
-   
+    padding: 10px;
  }
  .content p{
+   padding: 10px;
     font-size: 16px;
  }
  .popwrap{

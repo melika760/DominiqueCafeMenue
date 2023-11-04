@@ -7,11 +7,11 @@ import Footer from "../Components/Footer";
 export default function Homepage(props){
     return (
         <Fragment>
-          <Nav/>
+        <Nav/>
         <Header/>
         <AboutUs/>
-      
-        <Footer/>
+      <Footer/>
+    
         </Fragment>
           );
 }
