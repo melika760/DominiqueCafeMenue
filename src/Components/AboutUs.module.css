@@ -5,6 +5,12 @@
 justify-content:center;
 
 }
+.card{
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-around;
+   font-size:14px ;
+}
 
 .aboutimg{
     width: 622px;

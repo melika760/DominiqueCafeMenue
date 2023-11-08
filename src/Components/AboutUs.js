@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment,useState } from "react";
 import styles from "./AboutUs.module.css";
 import Button from "../UI/Button";
 import Breakfast from "../img/angelo-pantazis-1uIy-v4OlIk-unsplash.jpg";
@@ -6,7 +6,18 @@ import Salmon from "../img/Frame 12.jpg";
 import Pasta from "../img/Frame 13.jpg";
 import Greek from "../img/Frame 14.jpg";
 import { HashLink as Link } from "react-router-hash-link";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAngleDown,faAngleUp} from "@fortawesome/free-solid-svg-icons"
 export default function AboutUs(){
+const[salmondetails,setsalmondetails]=useState(false);
+const[pastadetails,setpastadetails]=useState(false);
+function Showdetail(){
+    setsalmondetails(!salmondetails)
+}
+function Showpasta(){
+    setpastadetails(!pastadetails)
+}
+    const salmondetail=<div className={styles.card}><p>Served with Chips & Salad</p><p>£12.95</p></div>
     return(<Fragment>
         <div className={styles.container}>
 <div className={styles.aboutimg}>
@@ -24,22 +35,25 @@ export default function AboutUs(){
                 <img src={Salmon} alt="Salmon Fillet"/>
                 <div className={styles.description}>
                     <h4>Grilled Salmon Fillet</h4>
-                    <Link to="/Menu#Salmon"smooth > <Button type="Button" className={styles.btn}>See Details</Button></Link>
-                   
+                    {salmondetails && salmondetail}
+                  {!salmondetails && <Button type="Button" className={styles.btn} onClick={Showdetail}><FontAwesomeIcon icon={faAngleDown} beat size="lg" style={{color: "#000000",marginRight:"5px"}} />See more</Button>}  
+                   {salmondetails && <Button type="Button" className={styles.btn} onClick={Showdetail}><FontAwesomeIcon icon={faAngleUp} beat size="lg" style={{color: "#000000",marginRight:"5px"}} />See less</Button> }
                 </div>
             </div>
             <div className={styles.popimg}>
                 <img src={Pasta} alt="Pasta"/>
                 <div className={styles.description}>
-                    <h4>Spaghetti Napoli</h4>
-                    <Link to="/Menu#spaghetti" smooth> <Button type="Button" className={styles.btn}>See Details</Button></Link>
+                    <h4>Spaghetti Bolognese</h4>
+                    {pastadetails && salmondetail}
+                  {!pastadetails && <Button type="Button" className={styles.btn} onClick={Showpasta}><FontAwesomeIcon icon={faAngleDown} beat size="lg" style={{color: "#000000",marginRight:"5px"}} />See more</Button>}  
+                   {pastadetails && <Button type="Button" className={styles.btn} onClick={Showpasta}><FontAwesomeIcon icon={faAngleUp} beat size="lg" style={{color: "#000000",marginRight:"5px"}} />See less</Button> }
                 </div>
             </div>
             <div className={styles.popimg}>
                 <img src={Greek} alt="Greek Salad"/>
                 <div className={styles.description}>
                     <h4>Greek Salad</h4> 
-                       <Link to="/Menu#Greek" smooth> <Button type="Button" className={styles.btn}>See Details</Button></Link>
+                       <Link to="/Menu#Greek" smooth> <Button type="Button" className={styles.btn}><FontAwesomeIcon icon={faAngleDown} beat size="lg" style={{color: "#000000",marginRight:"5px"}} />See Details</Button></Link>
                 </div>
             </div>
            
