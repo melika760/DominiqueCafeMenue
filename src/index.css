@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Playball&family=Roboto:wght@300;400&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  margin: 0;
+}
+
 body {
-  margin: 0px;
   font-family: 'Dynalight', cursive;
   font-family: 'Playball', cursive;
   font-family: 'Roboto', sans-serif;

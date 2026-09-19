@@ -9,21 +9,17 @@ import Juices from "../img/juices.png";
 import Smoothies from "../img/smoothie.png";
 import Softdrinks from "../img/Softdrink.png";
 import Hotdrinks from "../img/Hotdrinks.png";
-import BreakfastItems from "../Components/BreakfastItems";
 import {HashLink as Link } from "react-router-hash-link";
-import StarterItem from "./StarterItem";
-import SaladItem from "./SaladItem";
-import PastaItem from "./PastaItem";
-import HotdishesItem from "./HotdishesItem";
-import SandwichItem from "./SandwichItem";
-import JuiceItem from "./JuiceItem";
-import SmoothieItem from "./SmoothieItem";
-import SoftdrinksItem from "./SoftdrinksItem";
-import HotdrinksItem from "./HotdrinksItem";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import{faArrowUp} from "@fortawesome/free-solid-svg-icons"
-
+import{faArrowUp} from "@fortawesome/free-solid-svg-icons";
+import MenuItems from "./MenuItems";
+import {dummydata} from './MenuData'
 export default function Menue(){
+ 
+
+    const groupedItems =  Object.groupBy(dummydata, item => item.Category);
+
+   
     function Gotop(){
         window.scrollTo({
             top: 0,
@@ -32,57 +28,52 @@ export default function Menue(){
         });
     }
     const MenuLists=<div className={styles.wraper}>
-        <Link to="#BreakfastItem"className={styles.col} smooth><div >
+        <Link to="#Breakfast" className={styles.col} smooth><div >
         <img src={Breakfast} alt="Breakfast"/>  <p>Breakfast</p></div></Link>
-        <Link to="#Starteritem"className={styles.col} smooth>  <div>
+        <Link to="#Starter"className={styles.col} smooth>  <div>
         <img src={Starters} alt="Starter"/> <p>Starter</p> </div></Link>
-        <Link to="#SaladItem"className={styles.col} smooth><div >
+        <Link to="#Salads"className={styles.col} smooth><div >
         <img src={Salad} alt="Salad"/>  <p>Salad</p></div></Link>
-        <Link to="#PastaItem"className={styles.col} smooth><div >
+        <Link to="#Pasta"className={styles.col} smooth><div >
         <img src={pasta} alt="Pasta"/>  <p>Pasta</p></div></Link>
-        <Link to="#HotdishesItem"className={styles.col} smooth><div >
+        <Link to="#Hot dishes"className={styles.col} smooth><div >
         <img src={Hotdishes} alt="Hotdishes"/>  <p>Hot Dishes</p></div></Link>
-        <Link to="#SandwichesItem"className={styles.col} smooth><div >
+        <Link to="#Sandwiches"className={styles.col} smooth><div >
         <img src={Sandwwich} alt="Sandwiches"/>  <p>Sandwiches</p></div></Link>
-        <Link to="#JuicesItem"className={styles.col} smooth><div >
+        <Link to="#Juices"className={styles.col} smooth><div >
         <img src={Juices} alt="Juices"/>  <p>Juices</p></div></Link>
-        <Link to="#SmoothiesItem"className={styles.col} smooth><div >
+        <Link to="#Smoothies"className={styles.col} smooth><div >
         <img src={Smoothies} alt="Smoothies"/>  <p>Smoothies</p></div></Link>
-        <Link to="#SoftdrinksItem"className={styles.col} smooth><div >
+        <Link to="#Soft drinks"className={styles.col} smooth><div >
         <img src={Softdrinks} alt="Softdrinks"/>  <p>Soft Drinks</p></div></Link>
-   <Link to="#HotdrinksItem"className={styles.col} smooth><div >
+   <Link to="#Hot drinks"className={styles.col} smooth><div >
         <img src={Hotdrinks} alt="Hotdrinks"/>  <p>Hot Drinks</p></div></Link>
-     
-       
-        
-        
-       
-       
        
       
-        </div>
+        </div> 
     return(<div className={styles.mobile}>
         <h1 className={styles.header}>Foods & Drinks</h1>
         {MenuLists}
-       <BreakfastItems/>
-       <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <StarterItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <SaladItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <PastaItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <HotdishesItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <SandwichItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <JuiceItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <SmoothieItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <SoftdrinksItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
-        <HotdrinksItem/>
-        <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
+        <div>
+          {Object.entries(groupedItems).map(([category, items]) => (
+            <div key={category} className={styles.all}>
+              <h2 className={styles.title} id={category}>{category}</h2>
+              {category==="Pasta" && <p className={styles.extra}>All pasta dishes can be served either Spaghetti or Penne</p>}
+              {category==="Salads" && <p className={styles.extra}>All Served with Pita Bread</p>}
+            <div className={styles.wrap}> {items.map((item) => (
+                <MenuItems
+                  Category={item.Category}
+                  title={item.title}
+                  description={item.description}
+                  price={parseInt(item.price).toFixed(2)}
+                  key={item.id}
+                  id={item.id}
+                  subCategory={item.subCategory}
+                />
+              ))}</div>
+             <button onClick={Gotop} className={styles.btn}><FontAwesomeIcon icon={faArrowUp} flip size="2xl" /><p>Go Top</p></button>
+            </div>
+          ))}
+        </div>
     </div>)
 }

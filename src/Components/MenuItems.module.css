@@ -1,0 +1,51 @@
+.wrapItems{
+    display: flex;      
+    gap: clamp(1rem, 3vw, 2rem);
+    padding: 0 clamp(1rem, 4vw, 3rem);
+    }
+.item{
+        background-color: rgba(244, 189, 137, 0.1);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        margin: 0;
+        padding: clamp(1rem, 3vw, 1.875rem);
+    width: 100%;
+    
+    }
+    .item h3{
+        font-family: 'Playball', cursive;
+    font-size: 20px;
+    }
+    .prices{
+        display: flex;
+        justify-content: space-between;
+    }
+    .description{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        width: min(80%, 42rem);
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    } 
+    @media (max-width:968px){
+ .item{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+ }
+ .item  h3{
+    font-size: 16px;
+}
+ .flex{
+   display: block;
+   text-align: right
+} 
+.description{
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+}
+        }
+    

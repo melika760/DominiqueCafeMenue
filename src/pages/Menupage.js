@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 
 
-export default function Menupage(props){
+export default function Menupage(){
     return(
         <Fragment>
             <Nav/>

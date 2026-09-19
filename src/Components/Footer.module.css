@@ -3,27 +3,26 @@
     color: gray;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    gap: clamp(1rem, 4vw, 4rem);
+    padding: clamp(2rem, 5vw, 3.125rem) clamp(1rem, 4vw, 3rem);
 }
 
 @media (max-width:968px){
     .wraper{
-       padding: 0.2px;
-        margin: 0px;
-        width: 100%;
-        left: 0px;
-        right: 0px;
+    padding: 2rem 1rem;
+     margin: 0;
+     width: 100%;
      display: block;
-     overflow-x: hidden;
+    overflow-wrap: anywhere;
        
     }
     .description p{
         font-size: 12px;
-   margin-left: 5px;
+    margin-left: 0;
     }
     .description h3{
         font-size: 16px;
-        margin-left: 5px;
+        margin-left: 0;
     
     }
 }

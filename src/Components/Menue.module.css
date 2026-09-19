@@ -8,47 +8,43 @@ a.col:hover{
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: clamp(2rem, 5vw, 3.125rem);
    border: none;
     background-color: #F0E0D9;
     cursor: pointer;
     color: rgb(244, 174, 108);;
 }
+.all{
+    margin: clamp(5rem, 16vw, 14rem) auto 0;
+    max-width: 1200px;
+    padding: 0 clamp(1rem, 4vw, 3rem);
+}
 .wraper{
     display: flex;
     justify-content:flex-start;
-    padding: 20px;
+    gap: clamp(0.5rem, 2vw, 1.25rem);
+    padding: 1.25rem 0;
 }
 .header{
     text-align: center;
-    margin-top: 140px;
+    margin: clamp(3rem, 8vw, 7rem) 0 1.5rem;
     font-family: 'Playball', cursive;
   
 }
 a.col:active,a.col:hover,a.col::selection {
-    padding: 55px;
-    height: 75px;
-       text-align: center;
        background-color: rgba(244, 189, 137, 0.8);
-       border-radius: 10px;
-margin: 0 auto;
-       cursor: pointer;
+   
       
 }
-.active img{
-    width: 50px;
-    height: 50px;
-}
-.active p{
-    color: white;
-}
+
 .col{
- padding: 35px;
- height: 75px;
+ padding: clamp(1rem, 2.5vw, 2rem);
+ min-height: 75px;
+ height: auto;
     text-align: center;
     background-color: rgb(194, 187, 187,0.8);
     border-radius: 10px;
-    margin: 10.5px;
+    margin: 0;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -60,24 +56,46 @@ margin: 0 auto;
     height: 50px;
 }
 .col p{
-    color:white
+    color:white;
+    font-size: 12.5px;
+    font-weight: medium;
 }
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.wrap > div {
+    width: calc(50% - 0.5rem);
+  }
+.title{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Playball', cursive;
+   font-weight: bold;
+   font-size: 36px;
+}
+.extra{
+    text-align: center;
+}
+
 @media(max-width:1024px){
 .wraper{
-   display:inline-block;
-   padding: 5px;
-   margin: 15px auto;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1rem auto;
   text-align: center;
-  justify-content: space-between;
+    justify-content: center;
   
  
 }
 .col{
-    padding: 20px;
-    margin: 10px;
+    padding: 1rem;
     align-items: center;
-    height: 70px;
+    min-height: 70px;
     display: inline-flex;
+    font-size: 11px;
   
 }
 
@@ -85,13 +103,8 @@ margin: 0 auto;
     font-size: 12px;
 }
 a.col:active,a.col:hover,a.col::selection{
-    padding: 35px;
-    height: 75px;
-       text-align: center;
+
        background-color: rgba(244, 189, 137, 0.8);
-       border-radius: 10px;
-margin: 0 auto;
-       cursor: pointer;
       
 }
 .mobile{
@@ -99,5 +112,12 @@ margin: 0 auto;
     text-align: center;
   
 }
+
+.wrap{
+    display: block;
+}
+.wrap > div {
+    width: 100%;
+  }
 
 }
