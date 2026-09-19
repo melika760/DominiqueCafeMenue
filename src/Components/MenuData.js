@@ -92,7 +92,7 @@ export const dummydata = [
       },
       {
         title: "3 Egg Plain Omelette",
-        description: "Add 2 Toppings ",
+        description: "Add Toppings (Ham-Mushroom-Cheese-Tomato-onion Green Pepper) ",
         price: 6.95,
         id: "B5",
         Category: "Breakfast"
@@ -118,13 +118,7 @@ export const dummydata = [
         id: "B8",
         Category: "Breakfast"
       },
-      {
-        title: "Choice of Ingredients:(EACH)",
-        description: "Ham-Mushroom-Cheese-Tomato-onion Green Pepper",
-        price: 1.00,
-        id: "B9",
-        Category: "Breakfast"
-      },
+
       {
         title: "Soup of the Day",
         description: "Served with Bread & Butter",
