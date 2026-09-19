@@ -92,7 +92,7 @@ export const dummydata = [
       },
       {
         title: "3 Egg Plain Omelette",
-        description: "Add 2 Toppings £8.95 Add Chips on the side £9.95",
+        description: "Add 2 Toppings ",
         price: 6.95,
         id: "B5",
         Category: "Breakfast"
