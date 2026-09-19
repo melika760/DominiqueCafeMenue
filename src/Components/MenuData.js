@@ -21,14 +21,14 @@ export const dummydata = [
       Category: "Breakfast"
     },
     {
-      title: "Eggs on Toast Smoked Salmon Scramble",
+      title: "Smoked Salmon Scramble",
       description: "",
       price: 9.95,
       id: "E4",
       Category: "Breakfast"
     },
     {
-      title: "Eggs on Toast Royal Smoked Salmon Scramble & Avocado",
+      title: "Royal Smoked Salmon Scramble & Avocado",
       description: "",
       price: 11.95,
       id: "E5",
@@ -308,7 +308,7 @@ export const dummydata = [
         price: 4.95,
         id: "CS3",
         Category: "Sandwiches",
-        subCategory:"Club Sandwich",
+        
       },
       {
         title: "Tuna Mayo",
@@ -316,7 +316,7 @@ export const dummydata = [
         price: 5.95,
         id: "CS4",
         Category: "Sandwiches",
-        subCategory:"Club Sandwich",
+        
       },
       {
         title: "Prawn Mayo",
@@ -324,7 +324,7 @@ export const dummydata = [
         price: 5.95,
         id: "CS5",
         Category: "Sandwiches",
-        subCategory:"Club Sandwich",
+       
       },
       {
         title: "Prawn & Avocado",
@@ -332,15 +332,15 @@ export const dummydata = [
         price: 7.95,
         id: "CS6",
         Category: "Sandwiches",
-        subCategory:"Club Sandwich",
+       
       },
       {
         title: "Smashed Avocado on Toast",
         description: "",
         price: 6.95,
         id: "CS7",
-        Category: "Sandwiches",
-        subCategory:"Club Sandwich",
+        Category: "Breakfast",
+        
       },
       {
         title: "Bacon & Cheese Melt",
@@ -463,6 +463,12 @@ export const dummydata = [
         price: 4.50,
         id: "SM1",
         Category: "Smoothies"
+      },  {
+        title: "Mango Smoothie",
+        description: "",
+        price: 4.50,
+        id: "SM4",
+        Category: "Smoothies"
       },
       {
         title: "Summer Fruit Smoothie",
@@ -525,6 +531,12 @@ export const dummydata = [
         description: "",
         price: 2.80,
         id: "SF7",
+        Category: "Soft drinks"
+      }, {
+        title: "Iced Matcha",
+        description: "Served  your choice of syrup",
+        price: 4.50,
+        id: "SF8",
         Category: "Soft drinks"
       },
       {
@@ -595,6 +607,12 @@ export const dummydata = [
       description: "Milk & Chocolate Powder with whipped Cream",
       price:4.00,
       id: "HD10",
+      Category: "Hot drinks"
+    }, {
+      title: "Matcha Latte",
+      description: "",
+      price:4.00,
+      id: "HD11",
       Category: "Hot drinks"
     },
       
